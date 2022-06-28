@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="form-tittle">
+            <h1 id="title">Formulario</h1>
+            <p id="description">
+                Gracias por brindarnos tu tiempo llenando el formulario
+            </p>
+        </div>
+        <div>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label"class="etiqueta">Nombre</label>
+                    <input id="name" type="text" name="nombre" id="name" class="input"
+                        placeholder="Ingresa tu nombre" required />
+                </div>
+                <div class="form-group">
+                    <label  id="email-label" class="etiqueta">Correo</label>
+                    <input id="email" type="email" name="correo" id="email" class="input"
+                        placeholder="Ingresa tu email" required />
+                </div>
+                <div class="form-group">
+                    <label  id="number-label"class="etiqueta">Edad</label>
+                    <input id="number" type="number" name="edad" id="number" min="18" max="100" class="input"
+                        placeholder="Edad" required />
+                </div>
+                <div class="form-group">
+                    <label class="etiqueta">¿Cual es su grado de estudios?</label>
+                    <select name="grado" id="dropdown" class="input" required>
+                        <option disabled selected value>Seleccion grado de estudios</option>
+                        <option value="primaria">Primaria</option>
+                        <option value="secundaria">Secundaria</option>
+                        <option value="tecnico-completo">Tecnico Completo</option>
+                        <option value="tecnico-incompleto">Tecnico Incompleto</option>
+                        <option value="universitario-completo">Universitario Completo</option>
+                        <option value="universitario-incompleto">Universitario Incompleto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="etiqueta">¿Le gustan los estudios sobre informatica?</label>
+                    <label class="etiqueta-r">
+                        <input name="desicion" value="si" type="radio" class="input-r" checked />
+                        Si
+                    </label>
+                    <label class="etiqueta-r">
+                        <input name="desicion" value="no" type="radio" class="input-r" />
+                        No
+                    </label>
+                    <label class="etiqueta-r">
+                        <input name="desicion" value="nose" type="radio" class="input-r" />
+                        No opina
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="etiqueta">¿Que temas son de tu interes? <span>(Marca todas las de tu interes)</span>
+                    </label>
+                    <label class="etiqueta-c">
+                        <input 
+                        name="preferencia" 
+                        value="front-end" 
+                        type="checkbox" 
+                        class="input-c" />
+                        Front-end 
+                    </label>
+                    <label class="etiqueta-c">
+                        <input 
+                        name="preferencia" 
+                        value="back-end" 
+                        type="checkbox" 
+                        class="input-c" />
+                        Back-end
+                    </label>
+                    <label class="etiqueta-c">
+                        <input 
+                        name="preferencia" 
+                        value="big-data" 
+                        type="checkbox" 
+                        class="input-c" />
+                        Big Data
+                    </label>
+                    <label class="etiqueta-c">
+                        <input 
+                        name="preferencia" 
+                        value="base-de-datos" 
+                        type="checkbox" 
+                        class="input-c" />
+                        Base de Datos
+                    </label>
+                    <label class="etiqueta-c">
+                        <input 
+                        name="preferencia" 
+                        value="programacion-orientada-a-objetos" 
+                        type="checkbox" 
+                        class="input-c" />
+                        Programacion orientada a Objetos
+                    </label>
+                    <label class="etiqueta-c">
+                        <input 
+                        name="preferencia" 
+                        value="ciberseguridad" 
+                        type="checkbox" 
+                        class="input-c" />
+                        Ciberseguridad
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label  class="etiqueta">¿Algun comentario o sugerencia?</label>
+                    <textarea name="comentarios" id="comentarios" class="input-t" placeholder="Escribe tus comentarios aqui ..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button  id="submit"class="button">Enviar</button>
+                </div>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

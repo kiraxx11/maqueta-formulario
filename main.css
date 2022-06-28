@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color:#eee;
+    margin: 0px;
+}
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.contenedor{
+    margin: auto;
+    width: 90%;
+
+}
+
+.form-group{
+    background-color: #fff;
+    padding: 15px 20px;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+    border-left: 2.5px solid rgb(117, 200, 255);
+    display: block;
+    
+    max-width: 800px;
+}
+.form-tittle{
+    background-color: #fff;
+    padding: 15px 20px;
+    margin: 6vw auto 0 auto;
+    border-radius: 5px;
+    border-top: 2.5px solid rgb(117, 200, 255);
+   /* border-left: 2.5px solid rgb(117, 200, 255);*/
+    display: block;
+    
+    max-width: 800px;
+}
+.etiqueta{
+    display: block;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+.input{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.etiqueta-r,
+.etiqueta-c{
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0.15rem;
+}
+.input-r,
+.input-c{
+    display: inline-block;
+    min-width: 1rem;
+    min-height: 1rem;
+    margin-right: 0.5rem;
+    
+}
+
+.input-t{
+    width: 100%;
+    min-height: 120px;
+    padding:0.15rem ;
+    resize: unset;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    
+
+}
+
+.button{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color:rgb(117, 200, 255);
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-group:last-child{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+
